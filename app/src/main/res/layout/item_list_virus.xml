@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+
+    android:orientation="vertical">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        app:cardBackgroundColor="@color/colorPrimary"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="10dp"
+
+        app:contentPadding="@dimen/cardview_compat_inset_shadow">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="5dp">
+
+            <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/poto"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_margin="5dp"
+                app:civ_border_color="#fff"
+                app:civ_border_width="1dp"
+
+                tools:src="@drawable/dbd"
+                />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="vertical"
+                android:padding="5dp">
+
+
+                <TextView
+                    android:id="@+id/tvVirusName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="10dp"
+                    android:paddingTop="0dp"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    tools:text="Demam Berdarah" />
+
+                <TextView
+                    android:id="@+id/tvVirusDetail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:maxLines="3"
+                    android:paddingLeft="10dp"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="15sp"
+                    android:textStyle="normal"
+                    tools:text="Demam Berddarah berbahaya" />
+
+
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Wabah Virus</string>
+    <string name="virus_name">Nama Virus</string>
+    <string name="detail">Detail</string>
+</resources>

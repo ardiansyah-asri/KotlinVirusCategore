@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        app:cardCornerRadius="10dp"
+        tools:context=".VirusDetail">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="399dp"
+            android:padding="8dp">
+
+            <ImageView
+                android:id="@+id/poto"
+                android:layout_width="150dp"
+                android:layout_height="220dp"
+                android:layout_marginBottom="4dp"
+                android:scaleType="centerCrop"
+                tools:srcCompat="@drawable/dbd" />
+
+            <TextView
+                android:id="@+id/nama_virus"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginBottom="8dp"
+                android:layout_toEndOf="@id/poto"
+                android:layout_toRightOf="@id/poto"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                tools:text="Demam Berdarah" />
+
+            <TextView
+                android:id="@+id/detail_virus"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+
+                android:layout_below="@id/nama_virus"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_toEndOf="@id/poto"
+                android:layout_toRightOf="@id/poto"
+
+
+                tools:text="Bahaya" />
+
+
+        </RelativeLayout>
+
+
+    </androidx.cardview.widget.CardView>
+</layout>
